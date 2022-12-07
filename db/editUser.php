@@ -1,31 +1,37 @@
 <?php
 include 'connection.php';
-	foreach ($_POST as $key => $value)
-	{
-		if(preg_match("/[0-9]+_name/",$key)){
-			if($value != ''){
-			$key = strtok($key, '_');
+foreach ($_POST as $key => $value) {
+	$check = "SELECT * FROM users";
+	$result = mysqli_query($con, $check);
+	while ($row = mysqli_fetch_array($result)) {
+		if (!$result) {
+			die("Error in query: " . mysqli_error($con));
+		}
+		if (preg_match("/[0-9]+_payment/", $key)) {
 			$value = htmlspecialchars($value);
-			$sql = "UPDATE items SET name = '$value' WHERE id = $key;";
-			$con->query($sql);
+			if ($value == $row['payment']) {
+				$key = strtok($key, '_');
+				$sql = 'UPDATE users SET payment = "' . $row['payment'] . '" WHERE id = ' . $key;;
+				$con->query($sql);
+			} else {
+				$key = strtok($key, '_');
+				$sql = 'UPDATE users SET payment = "' . $value . '" WHERE id = ' . $key;;
+				$con->query($sql);
 			}
 		}
-		if(preg_match("/[0-9]+_price/",$key)){
-			$key = strtok($key, '_');
-			$sql = "UPDATE items SET price = $value WHERE id = $key;";
-			$con->query($sql);
-		}
-		if(preg_match("/[0-9]+_hide/",$key)){
-			if($_POST[$key] == 1){
-			$key = strtok($key, '_');
-			$sql = "UPDATE items SET deleted = 0 WHERE id = $key;";
-			$con->query($sql);
-			} else{
-			$key = strtok($key, '_');
-			$sql = "UPDATE items SET deleted = 1 WHERE id = $key;";
-			$con->query($sql);			
+
+		if (preg_match("/[0-9]+_status/", $key)) {
+			$value = htmlspecialchars($value);
+			if ($value != $row['status']) {
+				$key = strtok($key, '_');
+				$sql = 'UPDATE users SET status = "' . $value . '" WHERE id = ' . $key;;
+				$con->query($sql);
+			} else {
+				$key = strtok($key, '_');
+				$sql = 'UPDATE users SET status = "' . $row['status']  . '" WHERE id = ' . $key;;
+				$con->query($sql);
 			}
 		}
 	}
-header("location: ../admin-page.php");
-?>
+}
+header("location: ../admin.php");
