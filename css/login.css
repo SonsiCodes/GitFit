@@ -1,0 +1,13 @@
+body{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(195, 82, 252);
+}
+.su-title{
+    font-family: "Urbanist";
+    font-size: 32px;
+    padding: 10px;
+    color: white;
+    margin: 0;
+}
