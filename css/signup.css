@@ -2,7 +2,7 @@ body{
     display: block;
     align-items: center;
     justify-content: center;
-    background-image: url("../images/background.jpg")
+    background-image: url("../images/background.jpg");
 }
 .su-content {
     display: block;
@@ -93,5 +93,5 @@ body{
 }
 a {
     margin-left: 5px;
-    color: blue;
+    color: white;
 }

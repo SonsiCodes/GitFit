@@ -3,6 +3,7 @@ body{
     align-items: center;
     justify-content: center;
     background-image: url("../images/background.jpg");
+    
 }
 .su-content {
     display: block;
@@ -21,7 +22,7 @@ body{
 
 }
 .su-title {
-    font-family: "Urbanist";
+    /* font-family: "Urbanist"; */
     font-size: 32px;
     padding: 10px;
     color: white;
@@ -41,7 +42,7 @@ body{
     width: 70%;
     padding: 10px;
     border-radius: 5px;
-    font-family: "Source Sans Pro";
+    /* font-family: "Source Sans Pro"; */
 }
 p {
     padding: 0;
@@ -72,5 +73,5 @@ p {
     justify-content: center;
 }
 a{
-    color: blue;
+    color: white;
 }
