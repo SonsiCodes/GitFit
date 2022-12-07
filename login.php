@@ -38,7 +38,9 @@ else{
                 </div><br>
                 <div class="su-button">
                 <a href="javascript:void(0);" onclick="document.getElementById('form').submit();">Login</a>
-                <a href="signup.php">Register</a>
+                </div>
+                <div class="su-button">
+                    <a href="signup.php">Register</a>
                 </div>
             </form>
         </div>

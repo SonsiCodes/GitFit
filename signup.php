@@ -22,24 +22,24 @@
                 <div class="su-email">
                     <div class="grid-item">Email:</div><br>
                     <div class="grid-item"><input name="email" id="email" type="text" class="fields"
-                            placeholder="ex. name@email.com"></div>
+                            placeholder="Email"></div>
                 </div><br>
                 
                 <div class="su-firstname">
                     <div class="grid-item">Name:</div><br>
-                    <div class="grid-item"><input name="name" id="name" type="text" class="fields" placeholder="ex. John"
+                    <div class="grid-item"><input name="name" id="name" type="text" class="fields" placeholder="Name"
                             autocomplete="off"></div>
                 </div><br>
 
                 <div class="su-username">
                     <div class="grid-item">Username:</div><br>
-                    <div class="grid-item"><input name="username" id="username" class = "fields" type="text">
+                    <div class="grid-item"><input name="username" id="username" class = "fields" type="text" placeholder="Username">
                 </div><br>
 
 
                 <div class="su-contactnumber">
                     <div class="grid-item">Contact Number:</div><br>
-                    <div class="grid-item"><input name="contact" id="contact" class = "fields" type="text">
+                    <div class="grid-item"><input name="contact" id="contact" class = "fields" type="text" placeholder="Contact No.">
                 </div><br>
 
                 <div class="su-pass">
@@ -51,7 +51,11 @@
                 </div>
                     <div id="bottom"></div>
                 </div>
-                </form>
+                <br>
+            </form>
+                <div>
+                <a href="login.php">Already have an account? Login Here</a>
+                </div>
             </div>
         </div>
     </div>
