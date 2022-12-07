@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resiklo | Sign Up</title>
+    <title>GitFit | Sign Up</title>
     <link rel="icon" href="icons/appicon.png">
     <link rel="stylesheet" href="css\main.css">
     <link rel="stylesheet" href="css\signup.css">
@@ -19,41 +19,8 @@
 <body>
     <div class="navbar">
 
-        <nav class="nav-bar">
-            <link rel="stylesheet" href="css\nav-bar.css">
-            <link rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <div class="topnav" id="myTopnav">
-                <a class="btns active" href="https://envirotech.com.ph">Home</a>
-                <div class="links">
-                    <a class="btns" href="SignupPage.html">Sign up</a>
-                    <a class="btns" id="myBtn" href="index.html">Login</a>
-                    <a id="nav-btn" class="btns1" href="https://www.youtube.com/channel/UCdb6utvgaP064RHcuN45Iew"><img
-                            id="nav-icon" src="icons\yt.png" style="width: 20px; height: 20px;"></a>
-                    <a id="nav-btn" class="btns" href="https://www.facebook.com/envirotechphil"><img id="nav-icon"
-                            src="icons\fb.png" style="width: 20px; height: 20px;"></a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("myTopnav");
-                    if (x.className === "topnav") {
-                        x.className += " responsive";
-                    } else {
-                        x.className = "topnav";
-                    }
-                }
-            </script>
-        </nav>
-
         <div class="su-content">
-            <div class="logo">
-                <a href="Homepage.php"><img id="su-logo" src="icons/Envirotech_Logo-1.png"></a>
-            </div><br>
+ 
             <div class="signup">
                 <h2 class="su-title">Create a New Account</h2>
             </div>
