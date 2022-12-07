@@ -2,12 +2,75 @@ body{
     display: block;
     align-items: center;
     justify-content: center;
-    background-color: rgb(195, 82, 252);
+    background-image: url("../images/background.jpg")
 }
-.su-title{
+.su-content {
+    display: block;
+    align-items: center;
+    padding: auto;
+    margin-bottom: 50px;
+}
+.signup {
+    animation: fadeIn 2s;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background-color: black;
+    border-radius: 30px;
+
+}
+.su-title {
     font-family: "Urbanist";
     font-size: 32px;
     padding: 10px;
     color: white;
     margin: 0;
+}
+.su-details {
+    animation: fadeIn 3s;
+    background-color: black;
+    width: 40%;
+    margin: auto;
+    display: block;
+
+    border-radius: 10px;
+}
+.fields {
+    border-color: transparent;
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Source Sans Pro";
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.su-text {
+    padding-bottom: 5px;
+    font-family: "Urbanist";
+    font-size: 14px;
+}
+.su-email {
+    /* padding-top:10px; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    color: white;
+}
+.su-pass {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    color: white;
+}
+.su-button {
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: blue;
 }
