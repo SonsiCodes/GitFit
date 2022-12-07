@@ -1,3 +1,11 @@
+<?php  
+session_start(); 
+if(isset($_SESSION['admin_sid']) || isset($_SESSION['customer_sid']))
+{
+	header("location:index.php");
+}
+else{
+?>  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,29 +18,34 @@
 </head>
 
 <body>
-    <?php 
-    include 'db/connection.php';
-    ?>
     <div class="su-content">
         <div class="signup">
             <h1 class="su-title">Log in</h1>
         </div><br class="hiddenbr">
         <div class="su-details">
             <br><br>
-            <div class="su-email">
-                <p class="su-text">Email:</p>
-                <input id="email" type="text" class="fields" placeholder="email@gmail.com" tabindex="1">
-            </div><br>
-            <div class="su-pass">
-                <p class="su-text">Password:</p>
-                <input id="password" type="password" class="fields" placeholder="password" tabindex="2">
-            </div><br>
-            <div class="su-button">
-                <button id="loginbtn" type="button" tabindex="3">Login</button>
-            </div>
+            <form method="post" action="db/loginValidate.php" class="login-form" id="form">
+
+                <div class="su-email">
+                    <p class="su-text">Username:</p>
+                    <input name="username" id="username" type="text">
+                </div><br>
+
+                <div class="su-pass">
+                    <p class="su-text">Password:</p>
+                    <input name="password" id="password" type="password">
+                </div><br>
+                <div class="su-button">
+                <a href="javascript:void(0);" onclick="document.getElementById('form').submit();">Login</a>
+                <a href="signup.php">Register</a>
+                </div>
+            </form>
         </div>
     </div>
 
 </body>
 
 </html>
+<?php
+}
+?>

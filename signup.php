@@ -6,14 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitFit | Sign Up</title>
-    <link rel="icon" href="icons/appicon.png">
-    <link rel="stylesheet" href="css\main.css">
-    <link rel="stylesheet" href="css\signup.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Source+Sans+Pro&family=Urbanist&display=swap"
-        rel="stylesheet">
-    <script type="module" src="signup.js"></script>
 </head>
 
 <body>
@@ -25,39 +17,40 @@
                 <h2 class="su-title">Create a New Account</h2>
             </div>
             <div class="su-details">
+            <form class="formValidate" id="formValidate" method="post" action="db/signupValidate.php">
                 <div class="su-email">
                     <div class="grid-item">Email:</div><br>
-                    <div class="grid-item"><input id="email" type="text" class="fields"
+                    <div class="grid-item"><input name="email" id="email" type="text" class="fields"
                             placeholder="ex. name@email.com"></div>
                 </div><br>
+                
                 <div class="su-firstname">
-                    <div class="grid-item">First Name:</div><br>
-                    <div class="grid-item"><input id="fname" type="text" class="fields" placeholder="ex. John"
+                    <div class="grid-item">Name:</div><br>
+                    <div class="grid-item"><input name="name" id="name" type="text" class="fields" placeholder="ex. John"
                             autocomplete="off"></div>
                 </div><br>
-                <div class="su-lastname">
-                    <div class="grid-item">Last Name:</div><br>
-                    <div class="grid-item"><input id="lname" type="text" class="fields" placeholder="ex. Doe"
-                            autocomplete="off"></div>
+
+                <div class="su-email">
+                    <p class="su-text">Username:</p>
+                    <input name="username" id="username" type="text">
                 </div><br>
-                <div class="su-lastname">
-                    <div class="grid-item">Contact Number:</div><br>
-                    <div class="grid-item"><input id="contacts" type="text" class="fields"
-                            placeholder="ex. 091234567891"></div>
+
+
+                <div class="su-email">
+                    <p class="su-text">Contact Number:</p>
+                    <input name="contact" id="contact" type="text">
                 </div><br>
+
                 <div class="su-pass">
                     <div class="grid-item">Password:</div><br>
-                    <div class="grid-item"><input id="password" type="password" class="fields"></div>
+                    <div class="grid-item"><input name="password" id="password" type="password" class="fields"></div>
                 </div><br>
-                <div class="su-conpass">
-                    <div class="grid-item">Confirm Password:</div><br>
-                    <div class="grid-item"><input id="conpassword" type="password" class="fields"></div>
-                </div>
                 <div class="su-button">
-                    <button id="submitData" type="button">Sign Up</button>
+                <a href="javascript:void(0);" onclick="document.getElementById('formValidate').submit();">Register</a>
                 </div>
                     <div id="bottom"></div>
                 </div>
+                </form>
             </div>
         </div>
     </div>
