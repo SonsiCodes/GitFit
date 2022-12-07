@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\signup.css">
     <title>GitFit | Sign Up</title>
 </head>
 
@@ -30,15 +31,15 @@
                             autocomplete="off"></div>
                 </div><br>
 
-                <div class="su-email">
-                    <p class="su-text">Username:</p>
-                    <input name="username" id="username" type="text">
+                <div class="su-username">
+                    <div class="grid-item">Username:</div><br>
+                    <div class="grid-item"><input name="username" id="username" class = "fields" type="text">
                 </div><br>
 
 
-                <div class="su-email">
-                    <p class="su-text">Contact Number:</p>
-                    <input name="contact" id="contact" type="text">
+                <div class="su-contactnumber">
+                    <div class="grid-item">Contact Number:</div><br>
+                    <div class="grid-item"><input name="contact" id="contact" class = "fields" type="text">
                 </div><br>
 
                 <div class="su-pass">

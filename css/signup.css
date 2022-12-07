@@ -1,0 +1,92 @@
+body{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 241, 176);
+}
+.su-content {
+    display: block;
+    align-items: center;
+    padding: auto;
+    margin-bottom: 50px;
+}
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 48%;
+    background-color: #22AA86;
+    border-radius: 10px;
+}
+.su-title {
+    font-family: "Urbanist";
+    font-size: 32px;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+.su-details {
+    background-color: #44D3AD;
+    width: 48%;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: left;
+    border-radius: 10px;
+
+}
+.fields {
+    border-color: transparent;
+    width: 450px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Source Sans Pro";
+}
+.grid-item {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    font-size: 14px;
+}
+.su-email {
+    padding-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 2px auto;
+    grid-row-gap: 1px;
+    margin-bottom: 10px;
+}
+.su-firstname {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 2px auto;
+    grid-row-gap: 1px;
+    margin-bottom: 10px;
+}
+.su-username {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 2px auto;
+    grid-row-gap: 1px;
+    margin-bottom: 10px;
+}
+
+.su-pass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 2px auto;
+    grid-row-gap: 1px;
+    margin-bottom: 10px;
+}
+a {
+    margin-left: 5px;
+}
