@@ -2,7 +2,7 @@ body{
     display: block;
     align-items: center;
     justify-content: center;
-    background-color: rgb(35, 241, 176);
+    background-image: url("../images/background.jpg")
 }
 .su-content {
     display: block;
@@ -17,7 +17,7 @@ body{
     margin: auto;
     margin-bottom: 10px;
     width: 48%;
-    background-color: #22AA86;
+    background-color: black;
     border-radius: 10px;
 }
 .su-title {
@@ -28,7 +28,7 @@ body{
     color: white;
 }
 .su-details {
-    background-color: #44D3AD;
+    background-color: black;
     width: 48%;
     margin: auto;
     display: block;
@@ -58,6 +58,7 @@ body{
     grid-template-rows: 2px auto;
     grid-row-gap: 1px;
     margin-bottom: 10px;
+    color: white;
 }
 .su-firstname {
     display: flex;
@@ -67,6 +68,7 @@ body{
     grid-template-rows: 2px auto;
     grid-row-gap: 1px;
     margin-bottom: 10px;
+    color: white;
 }
 .su-username {
     display: flex;
@@ -76,6 +78,7 @@ body{
     grid-template-rows: 2px auto;
     grid-row-gap: 1px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .su-pass {
@@ -86,7 +89,9 @@ body{
     grid-template-rows: 2px auto;
     grid-row-gap: 1px;
     margin-bottom: 10px;
+    color: white;
 }
 a {
     margin-left: 5px;
+    color: blue;
 }

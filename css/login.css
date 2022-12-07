@@ -2,6 +2,7 @@ body{
     display: block;
     align-items: center;
     justify-content: center;
+    background-image: url("../images/background.jpg")
 }
 .su-content {
     display: block;
@@ -15,7 +16,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    background-color: #22AA86;
+    background-color: black;
     border-radius: 30px;
 
 }
@@ -28,7 +29,7 @@ body{
 }
 .su-details {
     animation: fadeIn 3s;
-    background-color: #44D3AD;
+    background-color: black;
     width: 40%;
     margin: auto;
     display: block;
@@ -56,15 +57,20 @@ p {
     display: flex;
     flex-direction: column;
     margin-left: 20%;
+    color: white;
 }
 .su-pass {
     display: flex;
     flex-direction: column;
     margin-left: 20%;
+    color: white;
 }
 .su-button {
     padding-bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+a{
+    color: blue;
 }

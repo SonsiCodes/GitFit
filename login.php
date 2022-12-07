@@ -14,12 +14,11 @@ else{
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\login.css">
-    <p style="background-image: url('images\background.jpg');">
     <title>GitFit | Login</title>
-
 </head>
 
 <body>
+    
     <div class="su-content">
         <div class="signup">
             <h1 class="su-title">Log in</h1>
