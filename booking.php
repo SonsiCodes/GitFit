@@ -25,19 +25,19 @@
             <input type="checkbox" id="checkbox1" name="checkboxes[]" value="Friday"> Friday </input>
             <input type="checkbox" id="checkbox1" name="checkboxes[]" value="Saturday"> Saturday </input>
 
-            <!-- <div> -->
+            <div>
                 <p>Please indicate your preferred time schedule for your sessions:</p>
                 <select name="TOD" id="TOD">
-                    <option value="">Select Time</option>
-                    <option value="Morning">Morning (7:00AM - 10:00AM)</option>
-                    <option value="Afternoon">Afternoon (1:00PM - 3:00PM)</option>
-                    <option value="Evening">Evening (6:00PM - 9:00PM)</option>
+                    <!-- <option value="">Select Time</option> -->
+                    <option value="Morning">Mornings (7:00AM - 10:00AM)</option>
+                    <option value="Afternoon">Afternoons (1:00PM - 3:00PM)</option>
+                    <option value="Evening">Evenings (6:00PM - 9:00PM)</option>
                 </select> 
-            <!-- </div> -->
-            <!-- <div> -->
+            </div>
+            <div>
                 <br>
-                <input id="submit" type="submit" name="submit">
-            <!-- </div> -->
+                <input id="submit" type="submit" name="submit" value="Apply">
+            </div>
         </form>
         <?php 
             $max_checkboxes = 4;
@@ -56,12 +56,12 @@
                             // If the number of checkboxes selected is greater than the maximum,
                             // display an error message
                             if ($count > $max_checkboxes) {
-     
+                                echo "You can only choose four days to continue.";
                             }
                             if($count < 4){
                                 echo "Please choose 4 days of your preferred scheduled sessions";
 
-                            }if($count == 4){ 
+                            }if($count == 4){    //save to database
                                 $name = $_SESSION['name'];
                                 $result = mysqli_query($con, "SELECT * FROM users WHERE name='$name'");
                                 while($row = mysqli_fetch_array($result))
@@ -69,21 +69,13 @@
                                     $contact = $row['contact'];
                                 }
                                 $time = ($_POST['TOD']);
-                                if(!empty($time)){
-                                    $query = "INSERT INTO schedule (time) VALUES ('$time')";
-                                    $result = $conn->query($query);
-                                    if($result){
-                                      echo "Course is inserted successfully";
-                                    }  
-                                  }
-                                $instructor = "Andrew Tate";
                                 $daysofweek = ($_POST['checkboxes']);
                                 $days= "";
                                 foreach($daysofweek as $s) {
                                     $days .= $s . ",";
                                 }
-                
-                                $sql = "INSERT INTO schedule (contact, instructor, day, name ) VALUES ('$contact', '$instructor', '$days','$name');";
+
+                                $sql = "INSERT INTO schedule (contact, day, time, name ) VALUES ('$contact', '$days', '$time', '$name');";
                                 if($con->query($sql)==true){
                                     $user_id =  $con->insert_id;
                                     echo 'add success';
