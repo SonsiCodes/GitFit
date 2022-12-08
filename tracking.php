@@ -21,6 +21,7 @@ include 'db/connection.php';
 
     <div>
         <p>Please pay the subscription amount so we can activate your subscription and start your fitness journey!</p>
+        <p>After your subscription has been activated, your assigned instructor will contact you when you are able to start the program</p>
     </div>
 
     <a href="logout.php">Logout</a>
