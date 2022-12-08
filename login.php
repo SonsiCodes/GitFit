@@ -37,11 +37,9 @@ else{
                     <input name="password" id="password" class = "fields" type="password">
                 </div><br>
                 <div class="su-button">
-                <a href="javascript:void(0);" onclick="document.getElementById('form').submit();">Login</a>
+                <a class="login" href="javascript:void(0);" onclick="document.getElementById('form').submit();">Login</a>
                 </div>
-                <div class="su-button">
-                    <a href="signup.php">Register</a>
-                </div>
+                <a class= "reg" href="signup.php">Don't have an account yet? Register here</a>
             </form>
         </div>
     </div>

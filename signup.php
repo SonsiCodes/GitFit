@@ -15,7 +15,7 @@
         <div class="su-content">
  
             <div class="signup">
-                <h2 class="su-title">Create a New Account</h2>
+                <h2 class="su-title">Sign Up</h2>
             </div>
             <div class="su-details">
             <form class="formValidate" id="formValidate" method="post" action="db/signupValidate.php">
@@ -44,17 +44,17 @@
 
                 <div class="su-pass">
                     <div class="grid-item">Password:</div><br>
-                    <div class="grid-item"><input name="password" id="password" type="password" class="fields"></div>
+                    <div class="grid-item"><input name="password" id="password" type="password" class="fields" placeholder="*********"></div>
                 </div><br>
                 <div class="su-button">
-                <a href="javascript:void(0);" onclick="document.getElementById('formValidate').submit();">Register</a>
+                <a href="javascript:void(0);" class="reg" onclick="document.getElementById('formValidate').submit();">Register</a>
                 </div>
                     <div id="bottom"></div>
                 </div>
                 <br>
             </form>
                 <div>
-                <a href="login.php">Already have an account? Login Here</a>
+                <a class="login" href="login.php">Already have an account? Login Here</a>
                 </div>
             </div>
         </div>

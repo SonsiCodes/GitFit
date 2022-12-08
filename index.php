@@ -19,45 +19,10 @@ if ($_SESSION['customer_sid'] == session_id()) {
 			<h4 class="nav-title">Welcome Customer!</h4>
 			<a class="nav-link" href="booking.php">Apply Now!</a>
 			<a class="nav-link" href="logout.php">Logout</a>
+			<a class="nav-link" href="tracking.php">Account</a>
 		</nav>
 		<div class="admin-content">
-			<div class="cont-title">
-				<h1>Customer Schedules</h1>
-			</div>
-			<!-- <table>
-				<thead>
-					<tr class="table-head">
-						<th>Name</th>
-						<th>Contact</th>
-						<th>Day</th>
-						<th>Time</th>
-						<th>Instructor</th>
-					</tr>
-				</thead>
-				 <tbody>
-					<tr>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-					</tr>
-					<tr>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-					</tr>
-					<tr>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-					</tr>
-				</tbody> -->
-			</table>
+			
 		</div>
 	</body>
 

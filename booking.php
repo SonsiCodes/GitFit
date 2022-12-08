@@ -68,8 +68,8 @@
                                 echo "Please choose 4 days of your preferred scheduled sessions";
 
                             }if($count == 4){    //save to database
-                                $uid = $_SESSION['user_id']
-                                $result = mysqli_query($con, "SELECT * FROM users WHERE id='$uid'");
+                                $uid = $_SESSION['user_id'];
+                                $result = mysqli_query($con, "SELECT * FROM users WHERE id ='$uid'");
                                 while($row = mysqli_fetch_array($result))
                                 {
                                     $contact = $row['contact'];
@@ -81,7 +81,7 @@
                                     $days .= $s . ",";
                                 }
 
-                                $sql = "INSERT INTO schedule (contact, day, time, name ) VALUES ('$contact', '$days', '$time', '$name');";
+                                $sql = "INSERT INTO schedule (schedID, contact, day, time, name ) VALUES ('$uid', '$contact', '$days', '$time', '$name');";
                                 if($con->query($sql)==true){
                                     $user_id =  $con->insert_id;
                                     echo 'add success';
