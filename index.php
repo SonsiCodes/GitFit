@@ -16,13 +16,12 @@ if ($_SESSION['customer_sid'] == session_id()) {
 
 	<body class="customer-side">
 		<nav class="user-nav">
-			<h4 class="nav-title">Welcome Customer!</h4>
-			<a class="nav-link" href="booking.php">Apply Now!</a>
-			<a class="nav-link" href="logout.php">Logout</a>
-			<a class="nav-link" href="tracking.php">Account</a>
+			<text class="nav-title">Welcome Customer!</text>
+			<a class="nav-link" href="tracking.php">|  Account</a>
+			<a class="nav-link" href="logout.php">|  Logout</a>
 		</nav>
 		<div class="admin-content">
-			
+			<a class="nav-link" href="booking.php">Apply Now!</a>
 		</div>
 	</body>
 

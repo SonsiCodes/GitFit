@@ -29,12 +29,12 @@ else{
 
                 <div class="su-email">
                     <p class="su-text">Username:</p>
-                    <input name="username" id="username" class = "fields" type="text">
+                    <input name="username" id="username" class = "fields" type="text" placeholder="Username">
                 </div><br>
 
                 <div class="su-pass">
                     <p class="su-text">Password:</p>
-                    <input name="password" id="password" class = "fields" type="password">
+                    <input name="password" id="password" class = "fields" type="password" placeholder="******">
                 </div><br>
                 <div class="su-button">
                 <a class="login" href="javascript:void(0);" onclick="document.getElementById('form').submit();">Login</a>
