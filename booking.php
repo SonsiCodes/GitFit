@@ -1,4 +1,10 @@
 <?php include 'db/connection.php';
+
+$uid = $_SESSION['user_id'];
+
+$result = mysqli_query($con, "SELECT * FROM schedule WHERE schedID='$uid'");
+if (mysqli_num_rows($result) == 0) {
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +17,11 @@
     </title>
 </head>
 <body>
-    <!-- <nav class="user-nav">
-        <h4 class="nav-title">Hello Customer!</h4>
-		<a class="nav-link" href="logout.php">Logout</a>
-	</nav> -->
+    <nav class="user-nav">
+        <text class="nav-title">Welcome Customer!</text>
+        <a class="nav-link" href="index.php">Home Page</a>
+        <a class="nav-link" href="logout.php">|  Logout</a>
+    </nav>
     <div class="cont-title">
         <h1>Customize Your Fitness Schedule</h1>
     </div>
@@ -42,7 +49,6 @@
             <div>
                 <br>
                 <input id="submit" type="submit" name="submit" value="Apply">
-                <a href="logout.php">Logout</a>
             </div>
         </form>
         <?php 
@@ -95,4 +101,10 @@
         ?>
     </div>
 </body>
+<?php
+//if the user has no subscription application yet
+} else {
+    header("location:tracking.php");
+}
+?>
 </html>
