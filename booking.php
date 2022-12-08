@@ -6,14 +6,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\booking.css">
     <title>GitFit | Booking
     </title>
 </head>
 <body>
-    <div>
+    <!-- <nav class="user-nav">
+        <h4 class="nav-title">Hello Customer!</h4>
+		<a class="nav-link" href="logout.php">Logout</a>
+	</nav> -->
+    <div class="cont-title">
         <h1>Customize Your Fitness Schedule</h1>
     </div>
-    <div>
+    <div class="cont-choices">
         <p>Choose Your Preferred Days of the Week: (Our program offers 4 sessions weekly)<p>
 
         <form class="formBook" method="post">
@@ -37,6 +42,7 @@
             <div>
                 <br>
                 <input id="submit" type="submit" name="submit" value="Apply">
+                <a href="logout.php">Logout</a>
             </div>
         </form>
         <?php 
@@ -88,6 +94,5 @@
         }
         ?>
     </div>
-    <a href="logout.php">Logout</a>
 </body>
 </html>
