@@ -79,6 +79,7 @@
                                 if($con->query($sql)==true){
                                     $user_id =  $con->insert_id;
                                     echo 'add success';
+                                    header("location:tracking.php");
                                 }else{
                                     echo 'error';
                                 }
