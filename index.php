@@ -30,6 +30,11 @@ if ($_SESSION['customer_sid'] == session_id()) {
 				<!-- <div class="bookBtn">
 					<a class="apply" href="booking.php">Apply Now!</a>
 				</div> -->
+				<div class="gallery">
+					<img src="images/pic1.jpg" alt="Image 1">
+					<img src="images/pic2.jpg" alt="Image 2">
+					<img src="images/pic3.jpg" alt="Image 3">
+				</div>
 			</div>
 
 
