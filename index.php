@@ -17,8 +17,8 @@ if ($_SESSION['customer_sid'] == session_id()) {
 	<body class="customer-side">
 		<nav class="user-nav">
 			<text class="nav-title">Welcome Customer!</text>
-			<a class="nav-link" href="tracking.php">|  Account</a>
-			<a class="nav-link" href="logout.php">|  Logout</a>
+			<a class="nav-link" href="tracking.php">| Account</a>
+			<a class="nav-link" href="logout.php">| Logout</a>
 		</nav>
 		<div class="logo_Cont">
 			<img id="logo" class="logo" src="Logo/gitfitLogo.png" width=50% height="500">
@@ -75,7 +75,7 @@ if ($_SESSION['customer_sid'] == session_id()) {
 
 		</div>
 
-		
+
 	</body>
 
 	</html>
