@@ -1,0 +1,107 @@
+.admin-side {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 100%;
+    background-image: url("../images/admin-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customer-side {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 100%;
+    background-image: url("../images/customer-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.user-nav {
+    display: flex;
+    background-color: rgb(253, 253, 253);
+
+}
+
+.user-nav>* {
+    padding: 10px;
+    margin: 10px;
+    font-size: large;
+    font-family: "Urbanist";
+    text-decoration: none;
+    color: black;
+}
+
+.nav-title {
+    margin-right: 70%;
+}
+
+.nav-link:hover {
+    font-weight: 600;
+}
+
+.admin-content {
+    background: rgba(255, 255, 255, 0.5);
+    margin: 20px 30px;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.cont-title {
+    margin: 20px 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: white;
+    height: 100%;
+    width: 92%;
+    font-family: Tahoma, sans-serif;
+}
+
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 96%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+table tbody tr {
+    height: 50px;
+}
+
+.table-head {
+    height: 60px;
+    background: rgb(181, 4, 22);
+}
+
+th {
+    font-family: system-ui;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; */
+td {
+    text-align: center;
+    font-family: system-ui;
+    /* padding-left: 40px !important; */
+}
