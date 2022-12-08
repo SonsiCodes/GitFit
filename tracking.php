@@ -16,6 +16,21 @@ include 'db/connection.php';
 
     <div>
     <!-- subscription status + amt to pay display -->
+    <?php
+        $result = mysqli_query($con, "SELECT * FROM users WHERE id='$uid'");
+        while($row = mysqli_fetch_array($result))
+        {
+            $name = $row['name'];
+        }
+
+        $res = mysqli_query($con, "SELECT * FROM users WHERE name='$name'");
+        while($row = mysqli_fetch_array($res))
+        {
+            $day = $row['day'];
+            $time = $row['time'];
+            $instructor =  $row['instructor'];
+        }
+    ?>
     </div>
 
 
