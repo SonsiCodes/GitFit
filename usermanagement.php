@@ -23,7 +23,7 @@
         }
         echo "<table>";
         echo "<tr>";
-        echo "<th>Name</th> <th>Email</th> <th>Contact</th> <th>Payment</th> <th>Status</th>";
+        echo "<th>Name</th> <th>Email</th> <th>Contact</th> <th>Payment</th> <th>Status</th> <th></th>";
         while ($row = mysqli_fetch_array($result)) {
             if ($row['role'] == "customer") {
                 echo "<tr>";
@@ -47,10 +47,13 @@
                     $text3 = '';
                     $text4 = 'selected';
                 }
-                echo '<td><select name="' . $row['id'] . '_status">
+                echo '<td><select name="' . $row['id']  . '_status">
                 <option value="inactive" ' . $text3 . '>Inactive</option>
                 <option value="active" ' . $text4 . '>Active</option> </select></td>';
-
+                echo '<td>';
+                // echo '<a href="deleteUser.php?id=' . $row['id'] . ' ">Delete</a>';
+                echo '<a href="db/deleteUser.php?id=' . $row['id'] . ' ">Delete</a>';
+                echo '</td>';
                 echo "</tr>";
             }
         }
