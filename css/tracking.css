@@ -28,3 +28,40 @@ body {
     width: 92%;
     font-family: Tahoma, sans-serif;
 }
+.user-nav {
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    font-size: large;
+    font-family: "Urbanist";
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-title {
+    margin-right: 70%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+}
+
+.nav-link:hover {
+    font-weight: 600;
+}
+a{
+    display: block;
+    /* width: 30px; */
+    height: 30px;
+    color: white;
+    line-height: 30px;
+    /* color: black; */
+    /* padding: 5px; */
+    border: none;
+    /* border-radius: 10px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+}

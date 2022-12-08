@@ -8,6 +8,7 @@ body{
 .su-content {
     display: block;
     align-items: center;
+    justify-content: center;
     padding: auto;
     margin-bottom: 50px;
 }
