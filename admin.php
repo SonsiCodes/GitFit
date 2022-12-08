@@ -25,7 +25,7 @@ if ($_SESSION['admin_sid'] == session_id()) {
 			<div class="cont-title">
 				<h1>Customer Schedules</h1>
 			</div>
-			<table>
+			<!-- <table>
 				<thead>
 					<tr class="table-head">
 						<th>Name</th>
@@ -36,29 +36,37 @@ if ($_SESSION['admin_sid'] == session_id()) {
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-					</tr>
-					<tr>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-					</tr>
-					<tr>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-						<td>test</td>
-					</tr>
+					<?php
+					$sql = "SELECT * FROM schedule";
+					// Execute the query
+					$result = mysqli_query($con, $sql);
+					// Check for errors in the SQL query
+					if (!$result) {
+						die("Error in query: " . mysqli_error($con));
+					}
+
+					while ($row = mysqli_fetch_array($result)) {
+						echo "<tr>";
+						echo '<td>' . $row['name'] . "</td>";
+						echo '<td>' . $row['contact'] .  "</td>";
+						echo '<td>' . $row['time'] . "</td>";
+						echo '<td>' . $row['day'] . "</td>";
+						if ($row['instructor'] == "") {
+							$text1 = 'selected';
+							$text2 = '';
+							$text3 = '';
+							$text4 = '';
+						}
+						echo '<td><select name="' . $row['schedID']  . '_status">
+                <option value="John" ' . $text1 . '>John</option>
+                <option value="Zeph" ' . $text2 . '>Zeph</option>
+                <option value="Shane" ' . $text3 . '>Shane</option>
+                <option value="Raphael" ' . $text4 . '>Raphael</option> </select></td>';
+						echo "</tr>";
+					}
+					?>
 				</tbody>
-			</table>
+			</table> -->
 		</div>
 	</body>
 

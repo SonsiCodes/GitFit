@@ -1,0 +1,30 @@
+body {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 100%;
+    background-image: url("../images/customer-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cont-great
+{
+    margin: 20px 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: white;
+    height: 100%;
+    width: 92%;
+    font-family: Tahoma, sans-serif;
+}
+.cont-pay
+{
+    margin: 20px 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: white;
+    height: 100%;
+    width: 92%;
+    font-family: Tahoma, sans-serif;
+}

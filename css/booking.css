@@ -1,0 +1,49 @@
+body {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 100%;
+    background-image: url("../images/customer-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .user-nav {
+    display: flex;
+    background-color: rgb(253, 253, 253);
+
+}
+
+.user-nav>* {
+    padding: 10px;
+    margin: 10px;
+    font-size: large;
+    font-family: "Urbanist";
+    text-decoration: none;
+    color: black;
+}
+.nav-title {
+    margin-right: 80.4%;
+}
+
+.nav-link:hover {
+    font-weight: 600;
+} */
+.cont-title {
+    margin: 20px 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: white;
+    height: 100%;
+    width: 92%;
+    font-family: Tahoma, sans-serif;
+}
+.cont-choices {
+    margin: 20px 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: white;
+    height: 100%;
+    width: 92%;
+    font-family: Tahoma, sans-serif;
+}
