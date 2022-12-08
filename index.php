@@ -24,7 +24,7 @@ if ($_SESSION['customer_sid'] == session_id()) {
 			<div class="cont-title">
 				<h1>Customer Schedules</h1>
 			</div>
-			<table>
+			<!-- <table>
 				<thead>
 					<tr class="table-head">
 						<th>Name</th>
@@ -34,7 +34,7 @@ if ($_SESSION['customer_sid'] == session_id()) {
 						<th>Instructor</th>
 					</tr>
 				</thead>
-				<tbody>
+				 <tbody>
 					<tr>
 						<td>test</td>
 						<td>test</td>
@@ -56,7 +56,7 @@ if ($_SESSION['customer_sid'] == session_id()) {
 						<td>test</td>
 						<td>test</td>
 					</tr>
-				</tbody>
+				</tbody> -->
 			</table>
 		</div>
 	</body>
