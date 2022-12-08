@@ -26,7 +26,7 @@ if (mysqli_num_rows($result) == 1) {
         <p>Great! Now that we have your schedule all set, please wait for our administrators to assign you an instructor.</p>
     </div>
 
-    <div>
+    <div class="cont-details">
     <!-- subscription status + amt to pay display -->
     <?php
         $uid = $_SESSION['user_id'];
@@ -52,6 +52,7 @@ if (mysqli_num_rows($result) == 1) {
         }else if ($time == "Evening"){
             $ToD = "Evenings (6:00PM - 9:00PM)";
         }
+
 
         echo "<div>";
         echo "Hi " . $name . ", This is your chosen schedule: ";

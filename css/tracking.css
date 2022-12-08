@@ -28,6 +28,14 @@ body {
     width: 92%;
     font-family: Tahoma, sans-serif;
 }
+.cont-details{
+    margin: 20px 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: white;
+    height: 100%;
+    width: 92%;
+}
 .user-nav {
     display: flex;
     background-color:rgba(0, 0, 0, 0.8);
