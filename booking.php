@@ -68,8 +68,8 @@
                                 echo "Please choose 4 days of your preferred scheduled sessions";
 
                             }if($count == 4){    //save to database
-                                $name = $_SESSION['name'];
-                                $result = mysqli_query($con, "SELECT * FROM users WHERE name='$name'");
+                                $uid = $_SESSION['user_id']
+                                $result = mysqli_query($con, "SELECT * FROM users WHERE id='$uid'");
                                 while($row = mysqli_fetch_array($result))
                                 {
                                     $contact = $row['contact'];
