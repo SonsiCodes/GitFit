@@ -1,0 +1,19 @@
+body{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 100%;
+    background-image: url("../images/admin-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cont-users{
+    margin: 20px 30px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: white;
+    height: 100%;
+    width: 92%;
+    font-family: Tahoma, sans-serif;
+}

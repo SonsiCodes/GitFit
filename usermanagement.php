@@ -7,12 +7,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\booking.css">
+    <link rel="stylesheet" href="css\usermanagement.css">
     <title>GitFit | User Management</title>
 </head>
 
 <body>
-
+    <div class="cont-users">
     <form class="formValidate" id="formValidate" method="post" action="db/editUser.php">
         <?php
         $sql = "SELECT * FROM users";
@@ -67,6 +67,7 @@
             <button type="submit" name="action">Modify
             </button>
         </div>
+    </div>
     </form>
 
 </body>
