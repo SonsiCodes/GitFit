@@ -54,31 +54,31 @@ if (mysqli_num_rows($result) == 1) {
             }
 
 
-            echo "<div>";
+            echo "<div class='Title'>";
             echo "Hi " . $name . ", This is your chosen schedule: ";
             echo "</div>";
 
-            echo "<div>";
+            echo "<div class='Title'>";
             echo "Days of the Week:";
             echo "</div>";
-            echo "<div>";
+            echo "<div class='Desc'>";
             echo $day;
             echo "</div>";
 
-            echo "<div>";
+            echo "<div class='Title'>";
             echo "Time Schedule:";
             echo "</div>";
-            echo "<div>";
+            echo "<div class='Desc'>";
             echo $ToD;
             echo "</div>";
 
-            echo "<div>";
+            echo "<div class='Title'>";
             echo "Subscription Fee: ₱3500/month";
             echo "</div>";
 
-            echo "<div>";
-            echo "Payment Status: <br> " . strtoupper($payment) . "<br>";
-            echo "Subscription Status: <br> " . strtoupper($status) . "<br>";
+            echo "<div class='Title'>";
+            echo "Payment Status: <br> " . strtoupper($payment) . "<br><br>";
+            echo "Subscription Status: <br> " . strtoupper($status) . "<br><br>";
             echo "Assigned Instructor: <br> " . $instructor . "<br>";
             echo "</div>";
             ?>
