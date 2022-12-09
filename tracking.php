@@ -2,7 +2,7 @@
 include 'db/connection.php';
 $uid = $_SESSION['user_id'];
 
-$result = mysqli_query($con, "SELECT * FROM schedule WHERE id='$uid'");
+$result = mysqli_query($con, "SELECT * FROM schedule WHERE schedID='$uid'");
 if (mysqli_num_rows($result) == 1) {
 
 ?>
