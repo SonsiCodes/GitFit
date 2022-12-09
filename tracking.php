@@ -32,7 +32,7 @@ if (mysqli_num_rows($result) == 1) {
             <!-- subscription status + amt to pay display -->
             <?php
             $uid = $_SESSION['user_id'];
-            $result = mysqli_query($con, "SELECT * FROM users WHERE schedID='$uid'");
+            $result = mysqli_query($con, "SELECT * FROM users WHERE id='$uid'");
             while ($row = mysqli_fetch_array($result)) {
                 $name = $row['name'];
                 $payment = $row['payment'];
