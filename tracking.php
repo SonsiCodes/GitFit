@@ -77,8 +77,8 @@ if (mysqli_num_rows($result) == 1) {
             echo "</div>";
 
             echo "<div>";
-            echo "Payment Status: <br> " . $payment . "<br>";
-            echo "Subscription Status: <br> " . $status . "<br>";
+            echo "Payment Status: <br> " . strtoupper($payment) . "<br>";
+            echo "Subscription Status: <br> " . strtoupper($status) . "<br>";
             echo "Assigned Instructor: <br> " . $instructor . "<br>";
             echo "</div>";
             ?>
