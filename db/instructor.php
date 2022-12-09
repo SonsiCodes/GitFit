@@ -11,11 +11,11 @@ foreach ($_POST as $key => $value) {
             $value = htmlspecialchars($value);
             if ($value == $row['instructor']) {
                 $key = strtok($key, '_');
-                $sql = 'UPDATE schedule SET instructor = "' . $row['instructor'] . '" WHERE id = ' . $key;;
+                $sql = 'UPDATE schedule SET instructor = "' . $row['instructor'] . '" WHERE schedId = ' . $key;;
                 $con->query($sql);
             } else {
                 $key = strtok($key, '_');
-                $sql = 'UPDATE schedule SET instructor = "' . $value . '" WHERE id = ' . $key;;
+                $sql = 'UPDATE schedule SET instructor = "' . $value . '" WHERE schedId = ' . $key;;
                 $con->query($sql);
             }
         }
