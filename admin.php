@@ -126,7 +126,7 @@ if ($_SESSION['admin_sid'] == session_id()) {
 							// 	$text4 = '';
 							// 	$text5 = 'selected';
 							// }
-							echo '<td><select name="' . $row['id']  . '_instructor">
+							echo '<td><select name="' . $row['schedID']  . '_instructor">
 								<option value="NotAssigned" ' . $text1 . '>Not Assigned</option>
 								<option value="John" ' . $text2 . '>John</option>
 								<option value="Zeph" ' . $text3 . '>Zeph</option>
