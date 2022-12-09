@@ -39,7 +39,7 @@ if (mysqli_num_rows($result) == 1) {
                 $status = $row['status'];
             }
 
-            $res = mysqli_query($con, "SELECT * FROM schedule WHERE name='$name'");
+            $res = mysqli_query($con, "SELECT * FROM schedule WHERE schedID='$uid'");
             while ($row = mysqli_fetch_array($res)) {
                 $day = $row['day'];
                 $time = $row['time'];
