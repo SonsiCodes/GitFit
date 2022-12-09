@@ -16,4 +16,13 @@ if ($result) {
     echo "Error deleting row: " . mysqli_error($con);
 }
 
+$sql = "DELETE FROM schedule WHERE schedID = '$userdelete'";
+$result = mysqli_query($con, $sql);
+
+if ($result) {
+    echo "Row deleted successfully.";
+} else {
+    echo "Error deleting row: " . mysqli_error($con);
+}
+
 header("location: ../admin.php");
